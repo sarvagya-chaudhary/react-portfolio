@@ -80,7 +80,7 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
+      className="bg-gradient-to-b from-black to-gray-800 w-full p-4 pt-20 text-white"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -99,7 +99,7 @@ const Portfolio = () => {
                 src={src}
                 alt=""
               />
-              <p className="pt-3 flex items-center justify-center">{pname}</p>
+              <p className="pt-5 flex items-center justify-center">{pname}</p>
               <div className="flex items-center justify-center">
                 <a href={demo} target="_blank" rel="noreferrer">
                   <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
