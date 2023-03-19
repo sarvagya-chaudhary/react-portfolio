@@ -14,15 +14,24 @@ const About = () => {
         </div>
 
         <p className="text-xl mt-20">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eius
-          aliquam consequatur distinctio iusto dolore repellat facere, harum
-          explicabo eum architecto molestias minima, tempore eos tenetur quia
-          labore accusantium, eligendi ex! Molestiae ipsam praesentium nam
-          inventore, alias harum sint veritatis, reiciendis porro facere quidem
-          omnis ipsum fugiat doloremque, distinctio ut.
+          As an avid explorer of the tech world, I have discovered a true
+          passion for coding, specifically in the exciting fields of full stack
+          development and data science. <br /> <br />
+          My insatiable curiosity and natural creativity are fueled by my
+          hobbies in art, craft, paintings, and music, which have given me a
+          unique perspective on visual design and problem-solving. What sets me
+          apart is my unwavering dedication to creating impactful projects in
+          collaboration with a team of like-minded individuals. <br />
+          <br />
+          With my diverse skill set and boundless enthusiasm, I strive to
+          combine technical expertise with a fresh and innovative approach to
+          deliver solutions that are both efficient and aesthetically pleasing.
+          I am excited to embark on a career that will allow me to continue
+          exploring the endless possibilities of the tech industry, while
+          contributing to meaningful projects that make a real difference.
         </p>
-        <br />
-        <p className="text-xl">
+        {/* <br /> */}
+        {/* <p className="text-xl">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
           voluptatum distinctio tempora! Quos porro illum atque voluptatem
           dolorum sint eius voluptatibus minima magni, asperiores sapiente
@@ -30,7 +39,7 @@ const About = () => {
           dicta sapiente suscipit, aperiam obcaecati fuga, cupiditate minus
           impedit quia rerum laborum assumenda quibusdam laudantium recusandae.
           Voluptatem?
-        </p>
+        </p> */}
       </div>
     </div>
   );

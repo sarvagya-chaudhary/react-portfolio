@@ -1,48 +1,79 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import spotolet from "../assets/portfolio/spotolet.png";
+import pwdmgr from "../assets/portfolio/pwdmgr.png";
+import drs from "../assets/portfolio/drs.png";
+import mpp from "../assets/portfolio/mpp.png";
+import guessnumber from "../assets/portfolio/guessnumber.png";
+import dicegame from "../assets/portfolio/dice.png";
+import drumkit from "../assets/portfolio/drumkit.png";
+import wpdb from "../assets/portfolio/wpdb.jpeg";
+import staup from "../assets/portfolio/t1.png";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
-      demo: "#",
-      code: "#",
+      src: spotolet,
+      demo: "https://spotolet.netlify.app/",
+      code: "https://github.com/sarvagya-chaudhary/spotolet-v1",
+      pname: "Renting App",
     },
     {
       id: 2,
-      src: installNode,
+      src: pwdmgr,
       demo: "#",
-      code: "#",
+      code: "https://github.com/sarvagya-chaudhary/pwd-master",
+      pname: "Password Manager",
     },
     {
       id: 3,
-      src: navbar,
-      demo: "#",
-      code: "#",
+      src: drs,
+      demo: "https://sarvagya-chaudhary.github.io/drs/",
+      code: "https://github.com/sarvagya-chaudhary/drs",
+      pname: "Client's Portfolio",
     },
     {
       id: 4,
-      src: reactParallax,
-      demo: "#",
-      code: "#",
+      src: mpp,
+      demo: "https://sarvagya-chaudhary.github.io/portfolio/",
+      code: "https://github.com/sarvagya-chaudhary/portfolio",
+      pname: "Personal Portfolio V1",
     },
+
     {
       id: 5,
-      src: reactSmooth,
-      demo: "#",
-      code: "#",
+      src: guessnumber,
+      demo: "https://sarvagya-chaudhary.github.io/gurss-my-number/",
+      code: "https://github.com/sarvagya-chaudhary/gurss-my-number",
+      pname: "Guess The Number",
     },
     {
-      id: 5,
-      src: reactWeather,
+      id: 6,
+      src: dicegame,
+      demo: "https://sarvagya-chaudhary.github.io/dice/",
+      code: "https://github.com/sarvagya-chaudhary/dice",
+      pname: "Dice Game",
+    },
+    {
+      id: 7,
+      src: drumkit,
+      demo: "https://sarvagya-chaudhary.github.io/drumkit/",
+      code: "https://github.com/sarvagya-chaudhary/drumkit",
+      pname: "DrumKit",
+    },
+    {
+      id: 8,
+      src: wpdb,
       demo: "#",
       code: "#",
+      pname: "Wild Plant Detection Bot",
+    },
+    {
+      id: 9,
+      src: staup,
+      demo: "#",
+      code: "#",
+      pname: "Screen Time Analysis (Python)",
     },
   ];
 
@@ -61,22 +92,23 @@ const Portfolio = () => {
           </p>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, demo, code }) => (
+          {portfolios.map(({ id, src, demo, code, pname }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 className="rounded-md duration-200 hover:scale-105"
                 src={src}
                 alt=""
               />
+              <p className="pt-3 flex items-center justify-center">{pname}</p>
               <div className="flex items-center justify-center">
                 <a href={demo} target="_blank" rel="noreferrer">
                   <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                    Demo
+                    LIVE
                   </button>
                 </a>
                 <a href={code} target="_blank" rel="noreferrer">
                   <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                    Code
+                    GitHub
                   </button>
                 </a>
               </div>
